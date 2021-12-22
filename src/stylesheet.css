@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.serif-text {
+  font-family: "Libre Baskerville", serif;
+}
+
+.sans-serif-text {
+  font-family: "Inter", sans-serif;
+}
+
+.custom-container {
+  padding: 0% 5%;
+}
+
+.primary-button {
+  @apply py-2 px-4 rounded-xl text-primaryWine-500 bg-alternateLightYellow-500 font-bold;
+}
+
+.hero-text {
+  padding: 0px 5vw 0px 0px;
+  @apply py-11 pl-6;
+}
