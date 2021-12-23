@@ -16,7 +16,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "tiltedBar-patterns": "url(public/Images/Tilted bar patterns.svg)",
+        'tiltedBar-patterns': "url(public/Images/Tilted bar patterns.svg)",
       },
     },
   },

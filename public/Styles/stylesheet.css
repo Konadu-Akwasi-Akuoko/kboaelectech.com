@@ -637,6 +637,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(245 243 203 / var(--tw-bg-opacity));
 }
 
+.bg-tiltedBar-patterns {
+  background-image: url(public/Images/Tilted bar patterns.svg);
+}
+
 .p-6 {
   padding: 1.5rem;
 }
