@@ -15,6 +15,9 @@ module.exports = {
           500: "#F5F3CB",
         },
       },
+      backgroundImage: {
+        "tiltedBar-patterns": "url(public/Images/Tilted bar patterns.svg)",
+      },
     },
   },
   plugins: [],
