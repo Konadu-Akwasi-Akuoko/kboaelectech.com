@@ -22,9 +22,14 @@ body {
 }
 
 .primary-button {
-  @apply py-2 px-4 rounded-xl text-primaryWine-500 bg-alternateLightYellow-500 font-bold;
+  @apply py-2 px-4 rounded-xl text-primaryWine-500 bg-alternateLightYellow-500 font-bold border-2 border-primaryWine-500;
+  @apply hover:text-alternateLightYellow-500 hover:border-alternateLightYellow-500 hover:bg-primaryWine-500 hover:border-2;
 }
 
+.secondry-button {
+  @apply py-2 px-4 rounded-xl border-2 border-primaryWine-500 text-primaryWine-500 font-bold;
+  @apply hover:text-alternateLightYellow-500 hover:bg-primaryWine-500;
+}
 .hero-text {
   padding: 0px 5vw 0px 0px;
   @apply py-11 pl-6;

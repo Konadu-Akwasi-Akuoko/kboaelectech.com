@@ -13,10 +13,11 @@ module.exports = {
         },
         alternateLightYellow: {
           500: "#F5F3CB",
+          600: "#BDBB93"
         },
       },
       backgroundImage: {
-        'tiltedBar-patterns': "url(public/Images/Tilted bar patterns.svg)",
+        "tiltedBar-patterns": "url(/public/Images/Tilted-bar-patterns.svg)",
       },
     },
   },
