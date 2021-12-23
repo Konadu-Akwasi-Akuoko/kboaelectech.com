@@ -506,8 +506,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -526,6 +535,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 40%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -538,16 +551,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
   align-items: flex-end;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-items-start {
+  justify-items: start;
 }
 
 .space-x-24 > :not([hidden]) ~ :not([hidden]) {
@@ -556,12 +593,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 .self-center {
   align-self: center;
 }
 
+.justify-self-start {
+  justify-self: start;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-alternateLightYellow-500 {
@@ -579,6 +632,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(107 39 55 / var(--tw-bg-opacity));
 }
 
+.bg-alternateLightYellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 243 203 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -594,6 +656,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -601,6 +673,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-alternateLightYellow-500 {
   --tw-text-opacity: 1;
   color: rgb(245 243 203 / var(--tw-text-opacity));
+}
+
+.text-primaryWine-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 39 55 / var(--tw-text-opacity));
 }
 
 .shadow {
