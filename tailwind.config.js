@@ -8,7 +8,7 @@ module.exports = {
           50: "#DFD1D4",
           100: "#E1D4D7",
         },
-        secondryOrange: {
+        secondaryOrange: {
           500: "#E08E45",
         },
         alternateLightYellow: {

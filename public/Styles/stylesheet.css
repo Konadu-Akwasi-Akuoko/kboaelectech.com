@@ -510,20 +510,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .ml-52 {
   margin-left: 13rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mr-52 {
   margin-right: 13rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -570,16 +586,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
 .place-items-center {
   place-items: center;
-}
-
-.content-start {
-  align-content: flex-start;
 }
 
 .items-end {
@@ -588,10 +596,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -606,8 +610,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
+.gap-x-28 {
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+}
+
 .gap-y-52 {
   row-gap: 13rem;
+}
+
+.gap-x-32 {
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+
+.gap-x-52 {
+  -moz-column-gap: 13rem;
+       column-gap: 13rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .space-x-24 > :not([hidden]) ~ :not([hidden]) {
@@ -628,12 +656,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .border {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
+.border-8 {
+  border-width: 8px;
 }
 
 .border-alternateLightYellow-500 {
@@ -660,8 +692,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url(/public/Images/Tilted-bar-patterns.svg);
 }
 
+.bg-circle-patterns {
+  background-image: url(/public/Images/CirclePatterns.svg);
+}
+
 .bg-contain {
   background-size: contain;
+}
+
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-6 {
@@ -702,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .text-alternateLightYellow-500 {
   --tw-text-opacity: 1;
   color: rgb(245 243 203 / var(--tw-text-opacity));
@@ -723,8 +775,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-filter);
 }
 
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-filter);
+}
+
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-filter);
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-filter);
 }
 
