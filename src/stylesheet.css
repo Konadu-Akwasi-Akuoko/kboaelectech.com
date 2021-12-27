@@ -30,7 +30,14 @@ body {
   @apply py-2 px-4 rounded-xl border-2 border-primaryWine-500 text-primaryWine-500 font-bold;
   @apply hover:text-alternateLightYellow-500 hover:bg-primaryWine-500;
 }
-.hero-text {
-  padding: 0px 5vw 0px 0px;
-  @apply py-11 pl-6;
+
+@screen lg {
+  .hero-text {
+    padding: 0px 5vw 0px 0px;
+    @apply py-11 pl-6;
+  }
+}
+
+.hero-text{
+  @apply py-10;
 }

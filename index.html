@@ -25,33 +25,65 @@
     <title>KBoa Elec-Tech</title>
   </head>
   <body class="bg-primaryWine-100 text-lg sans-serif-text">
-    <!-- Start of Header -->
+    <!-- !Start of Header -->
     <div>
-      <!-- Start of header content -->
+      <!-- !Start of header content -->
       <div class="bg-primaryWine-500 py-5">
-        <!-- Container for holding content-->
-        <div class="custom-container flex flex-row items-end flex-wrap">
-          <!-- Company Name -->
+        <!-- !Container for holding content-->
+        <div
+        id="header-gap-toggle"
+          class="
+            custom-container
+            flex
+            lg:flex-row
+            flex-col
+            lg:items-end lg:justify-end lg:gap-y-0
+
+          "
+        >
+          <!-- !Company Name and phone menuButton -->
           <div
-            class="serif-text text-3xl font-bold text-alternateLightYellow-500"
+            class="
+              serif-text
+              text-3xl
+              font-bold
+              text-alternateLightYellow-500
+              flex flex-row
+            "
           >
-            KBoa Elec-Tech
+            <div>
+              <a href="#">KBoa Elec-Tech</a>
+            </div>
+
+            <!-- !Start of phone menuButton -->
+            <div class="lg:hidden flex flex-1 justify-end">
+              <button id="menu-button" onclick="menuPressed()">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:menu-outlined"
+                  style="color: #f5f3cb"
+                  data-width="24"
+                  data-height="24"
+                ></span>
+              </button>
+            </div>
+            <!-- !End of phone menuButton -->
           </div>
-          <!-- Nav -->
-          <div class="flex-1">
+          <!-- !Nav -->
+          <div id="header-nav" class="lg:flex-1 hidden lg:inline-block">
             <ul
               class="
-                flex flex-wrap
-                justify-center
-                flex-row
-                space-x-24
+                flex
+                lg:flex-wrap lg:justify-center lg:flex-row
+                flex-col
+                lg:space-x-24
                 text-alternateLightYellow-500
                 font-bold
               "
             >
-              <li>
+              <li class="flex justify-end lg:mb-0 mb-4">
                 <a href="#">
-                  <div>
+                  <div class="inline-block">
                     Products
                     <div
                       class="border border-alternateLightYellow-500 w-2/4"
@@ -59,9 +91,9 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="flex justify-end lg:mb-0 mb-4">
                 <a href="#">
-                  <div>
+                  <div class="inline-block">
                     Solutions
                     <div
                       class="border border-alternateLightYellow-500 w-2/4"
@@ -69,9 +101,9 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="flex justify-end">
                 <a href="#">
-                  <div>
+                  <div class="inline-block">
                     Services & Support
                     <div
                       class="border border-alternateLightYellow-500 w-2/4"
@@ -81,17 +113,17 @@
               </li>
             </ul>
           </div>
-          <!-- Contact Us -->
+          <!-- !Contact Us -->
           <div>
-            <button class="primary-button">Contact Us</button>
+            <button class="primary-button hidden lg:flex">Contact Us</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- End of header -->
-    <!-- Start of Hero section -->
+    <!-- !End of header -->
+    <!-- !Start of Hero section -->
     <div class="hero-section">
-      <div class="relative flex">
+      <div class="lg:relative flex lg:flex-row flex-col">
         <img
           src="/public/Images/Hero-Image.jpg"
           alt="An electrical engineer"
@@ -103,10 +135,8 @@
             hero-text
             bg-primaryWine-500
             text-alternateLightYellow-500
-            absolute
-            w-2/5
-            right-0
-            self-center
+            lg:absolute lg:w-2/5 lg:right-0 lg:self-center
+            custom-container
           "
         >
           <div class="serif-text text-3xl font-bold mb-6">
@@ -121,14 +151,15 @@
         </div>
       </div>
     </div>
-    <!-- End of hero section -->
-    <!-- Start of afterHero1 -->
+    <!-- !End of hero section -->
+    <!-- !Start of afterHero1 -->
     <div class="bg-contain bg-tiltedBar-patterns py-20">
-      <div class="flex flex-row custom-container">
+      <div
+        class="flex lg:flex-row lg:gap-y-0 gap-y-10 flex-col custom-container"
+      >
         <div
           class="
-            w-2/5
-            self-center
+            lg:w-2/5 lg:self-center
             text-5xl
             serif-text
             text-primaryWine-500
@@ -137,9 +168,19 @@
         >
           We bring entertainment and security to the place you call home
         </div>
-        <div class="w-3/5">
-          <div class="flex flex-row gap-x-28 ml-52 mb-10">
-            <div class="w-1/2">
+        <div class="lg:w-3/5">
+          <div
+            class="
+              flex
+              lg:flex-row
+              flex-col
+              lg:gap-y-0
+              gap-y-8
+              lg:gap-x-28 lg:ml-52 lg:mb-10
+              mb-8
+            "
+          >
+            <div class="lg:w-1/2">
               <div
                 class="
                   bg-alternateLightYellow-500
@@ -169,7 +210,7 @@
                 into your home, we provide TV satellite installations.
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="lg:w-1/2">
               <div
                 class="
                   bg-alternateLightYellow-500
@@ -199,8 +240,17 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-row gap-x-28 ml-52">
-            <div class="w-1/2">
+          <div
+            class="
+              flex
+              lg:flex-row
+              flex-col
+              lg:gap-y-0
+              gap-y-8
+              lg:gap-x-28 lg:ml-52
+            "
+          >
+            <div class="lg:w-1/2">
               <div
                 class="
                   bg-alternateLightYellow-500
@@ -229,7 +279,7 @@
                 week.
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="lg:w-1/2">
               <div
                 class="
                   bg-alternateLightYellow-500
@@ -261,8 +311,8 @@
         </div>
       </div>
     </div>
-    <!-- End of afterHero1 -->
-    <!-- Start of afterHero2 -->
+    <!-- !End of afterHero1 -->
+    <!-- !Start of afterHero2 -->
     <div class="py-20 bg-primaryWine-500">
       <div
         class="
@@ -276,12 +326,19 @@
         customer service in the business.
       </div>
     </div>
-    <!-- End of afterHero2 -->
-    <!-- Start of afterHero3 -->
+    <!-- !End of afterHero2 -->
+    <!-- !Start of afterHero3 -->
     <div class="py-20">
       <div class="custom-container">
-        <div class="flex flex-row gap-y-52 justify-items-center items-center">
-          <div class="w-1/2 drop-shadow-2xl">
+        <div
+          class="
+            flex flex-col
+            lg:flex-row lg:gap-y-0
+            gap-y-8
+            lg:justify-items-center lg:items-center
+          "
+        >
+          <div class="lg:w-1/2 drop-shadow-2xl">
             <img
               class="rounded-lg"
               src="/public/Images/Security-Camera-01.jpg"
@@ -290,7 +347,7 @@
               alt="security camera image"
             />
           </div>
-          <div class="ml-52 w-1/2">
+          <div class="lg:ml-52 lg:w-1/2">
             <div>
               <div
                 class="serif-text text-5xl text-primaryWine-500 mb-6 font-bold"
@@ -310,12 +367,21 @@
         </div>
       </div>
     </div>
-    <!-- End of afterhero3-->
-    <!-- Start of afterHero04 -->
+    <!-- !End of afterhero3-->
+    <!-- !Start of afterHero04 -->
     <div class="py-20">
       <div class="custom-container">
-        <div class="flex flex-row gap-y-52 justify-items-center items-center">
-          <div class="mr-52 w-1/2">
+        <div
+          class="
+            flex
+            lg:flex-row
+            flex-col-reverse
+            lg:gap-y-0
+            gap-y-8
+            lg:justify-items-center lg:items-center
+          "
+        >
+          <div class="lg:mr-52 lg:w-1/2">
             <div>
               <div
                 class="serif-text text-5xl text-primaryWine-500 mb-6 font-bold"
@@ -332,7 +398,7 @@
               <button class="secondry-button">Get Yours</button>
             </div>
           </div>
-          <div class="w-1/2 drop-shadow-2xl">
+          <div class="lg:w-1/2 drop-shadow-2xl">
             <img
               class="rounded-lg"
               src="/public/Images/Sattelite-dish-tv.png"
@@ -344,8 +410,8 @@
         </div>
       </div>
     </div>
-    <!-- End of afterhero04-->
-    <!-- Start of afterHero05 -->
+    <!-- !End of afterhero04-->
+    <!-- !Start of afterHero05 -->
     <div
       class="
         custom-container
@@ -371,7 +437,7 @@
         "
       >
         <div class="py-20">
-          <!-- STARS -->
+          <!-- !STARS -->
           <div class="flex flex-row gap-2 mb-10">
             <div>
               <span
@@ -409,7 +475,7 @@
               ></span>
             </div>
           </div>
-          <!-- STARS end -->
+          <!-- !STARS end -->
           <div
             id="carousel-mainText"
             class="
@@ -442,11 +508,15 @@
         </button>
       </div>
     </div>
-    <!-- End of afterHero05 -->
-    <!-- Start of afterHero06 -->
+    <!-- !End of afterHero05 -->
+    <!-- !Start of afterHero06 -->
     <div class="custom-container">
-      <div class="py-20 flex flex-row gap-x-32">
-        <div class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl">
+      <div
+        class="py-20 flex lg:flex-row flex-col lg:gap-x-32 lg:gap-y-0 gap-y-10"
+      >
+        <div
+          class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl"
+        >
           <div class="serif-text text-5xl text-primaryWine-500 font-bold mb-4">
             98%
             <div class="inline mr-2 text-lg sans-serif-text font-normal">
@@ -458,7 +528,9 @@
             because it them who made us who we are
           </div>
         </div>
-        <div class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl">
+        <div
+          class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl"
+        >
           <div class="serif-text text-5xl text-primaryWine-500 font-bold mb-4">
             120+
             <div class="inline mr-2 text-lg sans-serif-text font-normal">
@@ -470,7 +542,9 @@
             places of our clients to ensure their electrical safety.
           </div>
         </div>
-        <div class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl">
+        <div
+          class="p-6 bg-alternateLightYellow-500 rounded-3xl drop-shadow-2xl"
+        >
           <div class="serif-text text-5xl text-primaryWine-500 font-bold mb-4">
             125+
             <div class="inline mr-2 text-lg sans-serif-text font-normal">
@@ -484,12 +558,21 @@
         </div>
       </div>
     </div>
-    <!-- End of afterHero06 -->
-    <!-- Start of contact/afterHero07 -->
+    <!-- !End of afterHero06 -->
+    <!-- !Start of contact/afterHero07 -->
     <div class="custom-container bg-primaryWine-500">
       <div class="py-20 text-alternateLightYellow-500">
-        <div class="flex flex-row gap-x-52">
-          <div class="flex flex-col gap-y-6 w-1/2">
+        <div
+          class="
+            flex
+            lg:flex-row
+            flex-col-reverse
+            lg:gap-x-52 lg:gap-y-0
+            gap-y-8
+            lg:items-center
+          "
+        >
+          <div class="flex flex-col gap-y-6 lg:w-1/2">
             <div class="text-5xl font-bold serif-text">
               Can we be of service to you?
             </div>
@@ -542,7 +625,7 @@
               </div>
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <img
               class="rounded-lg drop-shadow-lg"
               src="/public//Images/ContactCardImage.jpg"
@@ -551,8 +634,14 @@
           </div>
         </div>
       </div>
+      <div class="text-alternateLightYellow-500 text-center">
+        &copy; kboaelectech.com | Website designed and developed by
+        <a class="underline" href="https://twitter.com/akuoko_konadu">
+          Konadu Akwasi</a
+        >
+      </div>
     </div>
-    <!-- End of contact/afterHero07 -->
+    <!-- !End of contact/afterHero07 -->
     <script src="/public/JS/Home.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
