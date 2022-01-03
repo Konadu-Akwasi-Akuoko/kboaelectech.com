@@ -542,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -560,6 +564,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-items-center {
@@ -768,6 +776,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+div {
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .serif-text {

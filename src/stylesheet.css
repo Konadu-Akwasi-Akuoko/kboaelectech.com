@@ -9,6 +9,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+div {
+  @apply whitespace-normal break-words;
+}
+
 .serif-text {
   font-family: "Libre Baskerville", serif;
 }
@@ -38,6 +42,6 @@ body {
   }
 }
 
-.hero-text{
+.hero-text {
   @apply py-10;
 }
