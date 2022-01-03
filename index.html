@@ -24,7 +24,10 @@
     <link rel="manifest" href="/favicon_io/site.webmanifest" />
     <title>KBoa Elec-Tech</title>
   </head>
-  <body class="bg-primaryWine-100 md:text-lg text-base sans-serif-text">
+  <body
+    class="bg-primaryWine-100 md:text-lg text-base sans-serif-text"
+    onload=" changeIconOnSmDevice()"
+  >
     <!-- !Start of Header -->
     <div>
       <!-- !Start of header content -->
@@ -481,10 +484,9 @@
             class="
               serif-text
               md:text-5xl
-              text-3xl text-alternateLightYellow-500
+              text-2xl text-alternateLightYellow-500
               font-bold
               mb-10
-              break-all
             "
           >
             “KBoa Elec-Tech is a great organization. The team really informed me
@@ -617,25 +619,25 @@
             <div>
               <div class="flex flex-row flex-wrap gap-x-10">
                 <div>
-                  <a href="#">
+                  <a id="whatsapp-icon" href="#">
                     <span
                       class="iconify"
-                      data-icon="logos:whatsapp"
-                      style="color: #fff; font-size: 48px"
+                      data-icon="akar-icons:whatsapp-fill"
+                      style="color: white; font-size: 48px"
                     ></span>
                   </a>
                 </div>
                 <div>
-                  <a href="#">
+                  <a id="gmail-icon" href="#">
                     <span
                       class="iconify"
-                      data-icon="logos:google-gmail"
-                      style="color: #fff; font-size: 48px"
+                      data-icon="mdi:gmail"
+                      style="color: white; font-size: 48px"
                     ></span>
                   </a>
                 </div>
                 <div>
-                  <a href="#">
+                  <a id="call-icon" href="#">
                     <span
                       class="iconify"
                       data-icon="fluent:call-32-regular"
@@ -644,7 +646,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="#">
+                  <a id="instagram-icon" href="#">
                     <span
                       class="iconify"
                       data-icon="ant-design:instagram-outlined"
