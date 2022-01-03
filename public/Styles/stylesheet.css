@@ -542,10 +542,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -597,6 +593,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 .rounded-full {
