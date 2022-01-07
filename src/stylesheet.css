@@ -45,3 +45,7 @@ div {
 .hero-text {
   @apply py-10;
 }
+
+#header-nav{
+  transition: display 2s;
+}

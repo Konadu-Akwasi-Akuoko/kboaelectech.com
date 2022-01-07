@@ -98,22 +98,22 @@ function changeIconOnSmDevice() {
     whatsappIcon.innerHTML = `<span
     class="iconify"
     data-icon="akar-icons:whatsapp-fill"
-    style="color: white; font-size: 30px"
+    style="color: white; font-size: 38px"
     ></span>`;
     gmailIcon.innerHTML = `<span
     class="iconify"
     data-icon="mdi:gmail"
-    style="color: white; font-size: 30px"
+    style="color: white; font-size: 38px"
     ></span>`;
     callIcon.innerHTML = `<span
     class="iconify"
     data-icon="fluent:call-32-regular"
-    style="color: #fff; font-size: 30px"
+    style="color: #fff; font-size: 38px"
     ></span>`;
     instagramIcon.innerHTML = `<span
     class="iconify"
     data-icon="ant-design:instagram-outlined"
-    style="color: #fff; font-size: 30px"
+    style="color: #fff; font-size: 38px"
     ></span>`;
   }
 }

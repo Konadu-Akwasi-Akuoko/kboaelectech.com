@@ -862,6 +862,10 @@ div {
   padding-bottom: 2.5rem;
 }
 
+#header-nav{
+  transition: display 2s;
+}
+
 @media (min-width: 768px) {
   .md\:text-lg {
     font-size: 1.125rem;
