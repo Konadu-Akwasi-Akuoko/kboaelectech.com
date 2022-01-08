@@ -46,6 +46,25 @@ div {
   @apply py-10;
 }
 
-#header-nav{
-  transition: display 2s;
+#header-menu-nav {
+  padding: 0px 5vw 0px 0px;
+  @apply pl-4 py-5 
+  lg:hidden 
+  bg-primaryWine-500 
+  absolute 
+  transition-all 
+  duration-300 
+  ease-in;
+}
+
+/*  When the menu is not showing the menu is
+ positioned at right 75% of the width of the header */
+.not-showing-menu {
+  @apply -right-3/4;
+}
+
+/* When the menu is showing the menu is positioned at 0px right
+ of the width of the header */
+.showing-menu {
+  @apply right-0;
 }

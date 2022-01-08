@@ -29,16 +29,15 @@
     onload=" changeIconOnSmDevice()"
   >
     <!-- !Start of Header -->
-    <div>
-      <!-- !Start of header content -->
-      <div class="bg-primaryWine-500 py-5">
-        <!-- !Container for holding content-->
-        <div
-          id="header-gap-toggle"
-          class="custom-container flex lg:flex-row flex-col lg:items-end lg:justify-end lg:gap-y-0"
-        >
-          <!-- !Company Name and phone menuButton -->
-          <div>
+    <div id="full-nav" class="relative overflow-hidden">
+      <div class="w-screen">
+        <!-- !Start of header content -->
+        <div class="bg-primaryWine-500 py-5">
+          <!-- !Container for holding content-->
+          <div
+            class="custom-container flex lg:flex-row flex-col lg:items-end lg:justify-end lg:gap-y-0"
+          >
+            <!-- !Company Name and phone menuButton -->
             <div
               class="serif-text md:text-3xl text-2xl font-bold text-alternateLightYellow-500 flex flex-row"
             >
@@ -60,36 +59,58 @@
               </div>
               <!-- !End of phone menuButton -->
             </div>
-          </div>
 
-          <!-- !Nav -->
-          <div id="header-nav" class="lg:flex-1 hidden lg:inline-block">
-            <ul
-              class="flex lg:flex-wrap lg:justify-center lg:flex-row flex-col lg:space-x-24 text-alternateLightYellow-500 font-bold"
-            >
-              <li class="flex justify-center lg:mb-0 mb-4">
-                <a href="#">
-                  <div class="inline-block">Products</div>
-                </a>
-              </li>
-              <li class="flex justify-center lg:mb-0 mb-4">
-                <a href="#">
-                  <div class="inline-block">Solutions</div>
-                </a>
-              </li>
-              <li class="flex justify-center">
-                <a href="#">
-                  <div class="inline-block">Services & Support</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- !Contact Us -->
-          <div>
-            <button class="primary-button hidden lg:flex">Contact Us</button>
+            <!-- !Nav -->
+            <div class="lg:flex-1 hidden lg:inline-block">
+              <ul
+                class="flex lg:flex-wrap lg:justify-center lg:flex-row flex-col lg:space-x-24 text-alternateLightYellow-500 font-bold"
+              >
+                <li class="flex justify-center lg:mb-0 mb-4">
+                  <a href="#">
+                    <div class="inline-block">Products</div>
+                  </a>
+                </li>
+                <li class="flex justify-center lg:mb-0 mb-4">
+                  <a href="#">
+                    <div class="inline-block">Solutions</div>
+                  </a>
+                </li>
+                <li class="flex justify-center">
+                  <a href="#">
+                    <div class="inline-block">Services & Support</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- !Contact Us -->
+            <div>
+              <button class="primary-button hidden lg:flex">Contact Us</button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- !Nav on phone -->
+      <div id="header-menu-nav" class="not-showing-menu ">
+        <ul class="flex flex-col text-alternateLightYellow-500 font-bold">
+          <li class="flex justify-start lg:mb-0 mb-4">
+            <a href="#">
+              <div class="inline-block">Products</div>
+            </a>
+          </li>
+          <li class="flex justify-start lg:mb-0 mb-4">
+            <a href="#">
+              <div class="inline-block">Solutions</div>
+            </a>
+          </li>
+          <li class="flex justify-start">
+            <a href="#">
+              <div class="inline-block">Services & Support</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- !End of Nav on phone -->
     </div>
     <!-- !End of header -->
     <!-- !Start of Hero section -->

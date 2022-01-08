@@ -494,8 +494,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.visible {
-  visibility: visible;
+.relative {
+  position: relative;
 }
 
 .mb-4 {
@@ -542,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-2\/4 {
   width: 50%;
 }
@@ -574,6 +578,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -601,6 +609,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .rounded-full {
@@ -862,8 +878,37 @@ div {
   padding-bottom: 2.5rem;
 }
 
-#header-nav{
-  transition: display 2s;
+#header-menu-nav {
+  padding: 0px 5vw 0px 0px;
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 39 55 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (min-width: 1024px) {
+  #header-menu-nav {
+    display: none;
+  }
+}
+
+/*  When the menu is not showing the menu is
+ positioned at right 75% of the width of the header */
+
+.not-showing-menu {
+  right: -75%;
+}
+
+/* When the menu is showing the menu is positioned at 0px right
+ of the width of the header */
+
+.showing-menu {
+  right: 0px;
 }
 
 @media (min-width: 768px) {
