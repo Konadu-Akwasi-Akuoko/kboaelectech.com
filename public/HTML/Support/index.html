@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/Styles/stylesheet.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+    <title>KBoa Elec-Tech</title>
+  </head>
+  <body
+    class="bg-primaryWine-100 md:text-lg text-base sans-serif-text"
+    onload=" changeIconOnSmDevice()"
+  >
+    <!-- !Start of Header -->
+    <div id="full-nav" class="relative overflow-hidden">
+      <div class="w-screen">
+        <!-- !Start of header content -->
+        <div class="bg-primaryWine-500 py-5">
+          <!-- !Container for holding content-->
+          <div
+            class="custom-container flex lg:flex-row flex-col lg:items-end lg:justify-end lg:gap-y-0"
+          >
+            <!-- !Company Name and phone menuButton -->
+            <div
+              class="serif-text md:text-3xl text-2xl font-bold text-alternateLightYellow-500 flex flex-row"
+            >
+              <div>
+                <a href="/index.html">KBoa Elec-Tech</a>
+              </div>
+
+              <!-- !Start of phone menuButton -->
+              <div class="lg:hidden flex flex-1 justify-end">
+                <button id="menu-button" onclick="menuPressed()">
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:menu-outlined"
+                    style="color: #f5f3cb"
+                    data-width="24"
+                    data-height="24"
+                  ></span>
+                </button>
+              </div>
+              <!-- !End of phone menuButton -->
+            </div>
+            <!-- !Nav -->
+            <div class="lg:flex-1 hidden lg:inline-block">
+              <ul
+                class="flex lg:flex-wrap lg:justify-center lg:flex-row flex-col lg:space-x-24 text-alternateLightYellow-500 font-medium"
+              >
+                <li class="flex justify-center lg:mb-0 mb-4">
+                  <a href="/index.html">
+                    <div
+                      class="inline-block underline decoration-4 underline-offset-4 font-bold"
+                    >
+                      Home
+                    </div>
+                  </a>
+                </li>
+                <li class="flex justify-center lg:mb-0 mb-4">
+                  <a href="/public/HTML/Solutions/">
+                    <div class="inline-block">Solutions</div>
+                  </a>
+                </li>
+                <li class="flex justify-center">
+                  <a href="javascript: void(0)">
+                    <div class="inline-block">Support</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- !Contact Us -->
+            <div>
+              <button class="primary-button hidden lg:flex">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !Nav on phone -->
+      <div id="header-menu-nav" class="not-showing-menu">
+        <ul class="flex flex-col text-alternateLightYellow-500 font-bold">
+          <li class="flex justify-start lg:mb-0 mb-4">
+            <a href="/index.html">
+              <div class="inline-block">Home</div>
+            </a>
+          </li>
+          <li class="flex justify-start lg:mb-0 mb-4">
+            <a href="/public/HTML/Solutions/">
+              <div class="inline-block">Solutions</div>
+            </a>
+          </li>
+          <li class="flex justify-start">
+            <a href="javascript: void(0)">
+              <div class="inline-block">Support</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- !End of Nav on phone -->
+    </div>
+    <!-- !End of header -->
+
+    <div class="py-20">Content goes here</div>
+
+    <!-- !Start of contact/afterHero07 -->
+    <div class="custom-container bg-primaryWine-500">
+      <div class="py-20 text-alternateLightYellow-500">
+        <div
+          class="flex lg:flex-row flex-col-reverse lg:gap-x-52 lg:gap-y-0 gap-y-8 lg:items-center"
+        >
+          <div class="flex flex-col gap-y-6 lg:w-1/2">
+            <div class="md:text-5xl text-3xl font-bold serif-text">
+              Can we be of service to you?
+            </div>
+            <div>
+              Do you need a new satellite dish?
+              <br />
+              Do you need security cameras installed at your home or workplace?
+              <br />
+              Would you like to wire your house or workplace?
+            </div>
+            <div class="md:text-3xl text-2xl">Call the professionals now!</div>
+            <div>
+              <div class="flex flex-row flex-wrap gap-x-10">
+                <div>
+                  <a id="whatsapp-icon" href="javascript: void(0)">
+                    <span
+                      class="iconify"
+                      data-icon="akar-icons:whatsapp-fill"
+                      style="color: white; font-size: 48px"
+                    ></span>
+                  </a>
+                </div>
+                <div>
+                  <a id="gmail-icon" href="javascript: void(0)">
+                    <span
+                      class="iconify"
+                      data-icon="mdi:gmail"
+                      style="color: white; font-size: 48px"
+                    ></span>
+                  </a>
+                </div>
+                <div>
+                  <a id="call-icon" href="javascript: void(0)">
+                    <span
+                      class="iconify"
+                      data-icon="fluent:call-32-regular"
+                      style="color: #fff; font-size: 48px"
+                    ></span>
+                  </a>
+                </div>
+                <div>
+                  <a id="instagram-icon" href="javascript: void(0)">
+                    <span
+                      class="iconify"
+                      data-icon="ant-design:instagram-outlined"
+                      style="color: #fff; font-size: 48px"
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <img
+              class="rounded-lg drop-shadow-lg"
+              src="/public//Images/ContactCardImage.jpg"
+              alt="A man working with a rack"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="text-alternateLightYellow-500 text-center">
+        &copy; kboaelectech.com | Website designed and developed by
+        <a class="underline" href="https://twitter.com/akuoko_konadu">
+          Konadu Akwasi</a
+        >
+      </div>
+    </div>
+    <!-- !End of contact/afterHero07 -->
+    <script src="/public/JS/Home.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </body>
+</html>
