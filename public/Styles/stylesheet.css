@@ -526,6 +526,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.mr-40 {
+  margin-right: 10rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -558,12 +566,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
@@ -586,6 +618,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-items: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -596,6 +632,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -639,6 +683,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1.5rem;
 }
 
+.rounded-20px {
+  border-radius: 20px;
+}
+
 .border-8 {
   border-width: 8px;
 }
@@ -671,6 +719,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url(/public/Images/CirclePatterns.svg);
 }
 
+.bg-wavy-patterns {
+  background-image: url(/public/Images/SolutionHeroPatterns.png);
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -681,6 +733,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-right-bottom {
   background-position: right bottom;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -699,6 +755,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -723,6 +789,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -758,6 +829,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
 }
 
 .shadow {
@@ -816,7 +891,6 @@ body {
 
 div {
   white-space: normal;
-  overflow-wrap: break-word;
 }
 
 .serif-text {

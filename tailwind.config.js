@@ -13,12 +13,16 @@ module.exports = {
         },
         alternateLightYellow: {
           500: "#F5F3CB",
-          600: "#BDBB93"
+          600: "#BDBB93",
         },
       },
       backgroundImage: {
         "tiltedBar-patterns": "url(/public/Images/Tilted-bar-patterns.svg)",
-        "circle-patterns": "url(/public/Images/CirclePatterns.svg)"
+        "circle-patterns": "url(/public/Images/CirclePatterns.svg)",
+        "wavy-patterns": "url(/public/Images/SolutionHeroPatterns.png)",
+      },
+      borderRadius: {
+        "20px": "20px",
       },
     },
   },

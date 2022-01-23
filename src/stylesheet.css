@@ -10,7 +10,7 @@ body {
 }
 
 div {
-  @apply whitespace-normal break-words;
+  @apply whitespace-normal;
 }
 
 .serif-text {
