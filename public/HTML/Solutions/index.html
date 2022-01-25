@@ -25,7 +25,7 @@
     <title>KBoa Elec-Tech</title>
   </head>
   <body
-    class="bg-primaryWine-100 md:text-lg text-base sans-serif-text"
+    class="bg-primaryWine-100 lg:text-lg text-base sans-serif-text"
     onload=" changeIconOnSmDevice()"
   >
     <!-- !Start of Header -->
@@ -39,7 +39,7 @@
           >
             <!-- !Company Name and phone menuButton -->
             <div
-              class="serif-text md:text-3xl text-2xl font-bold text-alternateLightYellow-500 flex flex-row"
+              class="serif-text lg:text-3xl text-2xl font-bold text-alternateLightYellow-500 flex flex-row"
             >
               <div>
                 <a href="/index.html">KBoa Elec-Tech</a>
@@ -103,16 +103,16 @@
           </li>
           <li class="flex justify-start lg:mb-0 mb-4">
             <a href="/public/HTML/Solutions/">
-              <div class="inline-block">Solutions</div>
-            </a>
-          </li>
-          <li class="flex justify-start">
-            <a href="javascript: void(0)">
               <div
                 class="inline-block underline decoration-4 underline-offset-4 font-bold"
               >
-                Support
+                Solutions
               </div>
+            </a>
+          </li>
+          <li class="flex justify-start">
+            <a href="/public/HTML/Support/">
+              <div class="inline-block">Support</div>
             </a>
           </li>
         </ul>
@@ -125,9 +125,11 @@
     <div
       class="custom-container text-primaryWine-500 bg-wavy-patterns bg-top bg-contain bg-no-repeat"
     >
-      <div class="py-20 flex flex-row items-center">
+      <div
+        class="pb-20 lg:py-20 flex flex-col-reverse lg:flex-row items-center"
+      >
         <!-- *Text in hero -->
-        <div class="w-2/5 mr-40">
+        <div class="lg:w-2/5 lg:mr-40">
           <div class="text-5xl font-bold mb-6">
             The only place you’ll get all your
           </div>
@@ -147,7 +149,7 @@
           </div>
         </div>
         <!-- *Image in hero -->
-        <div class="w-3/5">
+        <div class="lg:w-3/5 mb-6 lg:mb-0">
           <img
             src="/public/Images/HeroImageSolutions.png"
             alt="Images of people working"
@@ -156,43 +158,47 @@
       </div>
     </div>
     <!-- !End of hero -->
+
     <!-- !Start of afterHero 01 -->
     <div class="custom-container bg-primaryWine-500">
-      <div class="py-20 flex flex-row">
+      <div class="py-20 flex flex-col lg:flex-row">
         <div
-          class="w-1/5 text-5xl font-bold serif-text text-alternateLightYellow-500"
+          class="lg:w-1/5 lg:mr-6 text-5xl font-bold serif-text text-alternateLightYellow-500"
         >
           Big companies trust us
         </div>
-        <div class="w-4/5">
-          <div class="flex flex-row justify-around">
+        <div class="lg:w-4/5">
+          <div
+            class="flex flex-row flex-wrap lg:flex-nowrap lg:space-x-6 space-y-6 lg:space-y-0 justify-around"
+          >
+            <div class="hidden"></div>
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/GoogleLogo.png"
               alt="Google logo"
             />
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/FacebookLogo.png"
               alt="Facebook logo"
             />
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/AmazonLogo.png"
               alt="Amazon logo"
             />
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/SamsungLogo.png"
               alt="Samsung logo"
             />
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/AppleLogo.png"
               alt="Apple logo"
             />
             <img
-              class="rounded-20px"
+              class="rounded-20px ml-2"
               src="/public/Images/BloombergLogo.png"
               alt="Bloomberg logo"
             />
@@ -212,9 +218,11 @@
         </div>
         <div class="flex flex-col">
           <!-- !First column -->
-          <div class="flex flex-row justify-between mb-12">
+          <div
+            class="flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 mb-12"
+          >
             <!-- !First card-->
-            <div class="w-2/5 flex flex-col">
+            <div class="lg:w-2/5 flex flex-col">
               <!-- *Image inside card-->
               <div class="relative z-0">
                 <img
@@ -225,7 +233,7 @@
               </div>
               <!-- *Text inside card-->
               <div
-                class="py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 w-4/5 rounded-20px mx-auto -mt-16 relative z-10 shadow-xl grow"
+                class="py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 lg:w-4/5 rounded-20px lg:mx-auto -mt-16 relative z-10 shadow-xl grow"
               >
                 <div class="text-3xl font-medium serif-text mb-4">
                   Satellite Dish Installation
@@ -238,7 +246,7 @@
               </div>
             </div>
             <!-- !Second card-->
-            <div class="w-2/5 flex flex-col">
+            <div class="lg:w-2/5 flex flex-col">
               <!-- *Image inside card-->
               <div class="relative z-0">
                 <img
@@ -249,7 +257,7 @@
               </div>
               <!-- *Text inside card-->
               <div
-                class="relative py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 w-4/5 rounded-20px mx-auto -mt-16 z-10 shadow-xl grow"
+                class="py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 lg:w-4/5 rounded-20px lg:mx-auto -mt-16 relative z-10 shadow-xl grow"
               >
                 <div class="text-3xl font-medium serif-text mb-4">
                   Electrical Services
@@ -263,9 +271,11 @@
             </div>
           </div>
           <!-- !Second column-->
-          <div class="flex flex-row justify-between">
+          <div
+            class="flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0"
+          >
             <!-- !Third card-->
-            <div class="w-2/5 flex flex-col">
+            <div class="lg:w-2/5 flex flex-col">
               <!-- *Image inside card-->
               <div class="relative z-0">
                 <img
@@ -276,7 +286,7 @@
               </div>
               <!-- *Text inside card-->
               <div
-                class="py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 w-4/5 rounded-20px mx-auto -mt-16 relative z-10 shadow-xl grow"
+                class="py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 lg:w-4/5 rounded-20px lg:mx-auto -mt-16 relative z-10 shadow-xl grow"
               >
                 <div class="text-3xl font-medium serif-text mb-4">
                   Electric Fence
@@ -289,7 +299,7 @@
               </div>
             </div>
             <!-- !Fourth card-->
-            <div class="w-2/5 flex flex-col">
+            <div class="lg:w-2/5 flex flex-col">
               <!-- *Image inside card-->
               <div class="relative z-0">
                 <img
@@ -300,7 +310,7 @@
               </div>
               <!-- *Text inside card-->
               <div
-                class="relative py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 w-4/5 rounded-20px mx-auto -mt-16 z-10 shadow-xl grow"
+                class="relative py-8 px-6 bg-primaryWine-500 text-alternateLightYellow-500 lg:w-4/5 rounded-20px lg:mx-auto -mt-16 z-10 shadow-xl grow"
               >
                 <div class="text-3xl font-medium serif-text mb-4">
                   CCTV cameras
@@ -320,8 +330,10 @@
 
     <!-- !Start of afterHero 03 -->
     <div class="custom-container bg-doodles-patterns bg-contain">
-      <div class="flex flex-row items-center py-20 space-x-20">
-        <div class="w-1/2">
+      <div
+        class="flex flex-col-reverse lg:flex-row items-center py-20 lg:space-x-20"
+      >
+        <div class="lg:w-1/2">
           <div class="text-5xl font-bold text-primaryWine-500 serif-text mb-6">
             Get a peace of mind by calling the professional installers
           </div>
@@ -332,14 +344,16 @@
             home or a corporate business give us a call, and we will be there.
           </div>
           <div>
-            <button class="primary-button shadow-xl relative z-10">Call us now</button>
+            <button class="primary-button shadow-xl relative z-10">
+              Call us now
+            </button>
             <span
-              class="py-2 pl-6 pr-2 -ml-6 bg-alternateLightYellow-500 text-gray-500 rounded-xl relative z-0"
+              class="p-2 lg:py-2 lg:pl-6 lg:pr-2 lg:-ml-6 inline-block lg:inline bg-alternateLightYellow-500 text-gray-500 rounded-xl relative z-0"
               >Get 10% off by calling us now</span
             >
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="lg:w-1/2 mb-12">
           <div>
             <img
               src="/public/Images/AllImagesStyled.png"
@@ -351,7 +365,7 @@
     </div>
     <!-- !End of afterHero 03-->
 
-    <!-- !Start of contactsFooter -->
+    <!-- !Start of contact/afterHero07 -->
     <div class="custom-container bg-primaryWine-500">
       <div class="py-20 text-alternateLightYellow-500">
         <div
