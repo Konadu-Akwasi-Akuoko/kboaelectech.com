@@ -1,5 +1,5 @@
 let carousel_mainText = document.querySelector("#carousel-mainText");
-let carousel_secondaryText = document.querySelector("carousel-secondaryText");
+let carousel_secondaryText = document.querySelector("#carousel-secondaryText");
 let carousel_id = 0;
 
 //Animation of phone-menu-button
@@ -17,11 +17,11 @@ let instagramIcon = document.querySelector("#instagram-icon");
 let windowWidth = window.innerWidth;
 
 const mainTestimonies = [
-  `“KBoa Elec-Tech is a great organization. The team really informed me about the best decision for me and they went every extra mile in the installation stage!” 01`,
-  `“KBoa Elec-Tech is a great organization. The team really informed me about the best decision for me and they went every extra mile in the installation stage!” 02`,
-  `“KBoa Elec-Tech is a great organization. The team really informed me about the best decision for me and they went every extra mile in the installation stage!” 03`,
+  `“KBoa Elec-Tech is a great organization. The team really informed me about the best decision for me and they went every extra mile in the installation stage!”`,
+  `“KBoa Elec-Tech's Kwame was very knowledgeable. I purchased a new dish and he installed it with ease. I'm extremely satisfied, especially the patience of the agent to deal with a customer that knows nothing about satellites.”`,
+  `“I have consistently been pleased with the products and technical services that I have received from KBoa Elec tech since first dealing with them in 2016.”`,
 ];
-const nameOfTestimonials = [`Akwasi Konadu`, `Brooklyn Simmons`, `Kwame Kofi`];
+const nameOfTestimonials = [`-Kwame Appiah`, `-Godfred Nyame`, `-Ama Pokuaa`];
 
 // When the chevron left button is pressed the carousel id is decreased
 // by one and the switch statement chooses the a testimony to display.
@@ -34,12 +34,15 @@ function ChevronLeft() {
   switch (carousel_id) {
     case 0:
       carousel_mainText.innerText = mainTestimonies[0];
+      carousel_secondaryText.innerText = nameOfTestimonials[0];
       break;
     case 1:
       carousel_mainText.innerText = mainTestimonies[1];
+      carousel_secondaryText.innerText = nameOfTestimonials[1];
       break;
     case 2:
       carousel_mainText.innerText = mainTestimonies[2];
+      carousel_secondaryText.innerText = nameOfTestimonials[2];
   }
   console.log(carousel_id);
 }
@@ -55,12 +58,15 @@ function ChevronRight() {
   switch (carousel_id) {
     case 0:
       carousel_mainText.innerText = mainTestimonies[0];
+      carousel_secondaryText.innerText = nameOfTestimonials[0];
       break;
     case 1:
       carousel_mainText.innerText = mainTestimonies[1];
+      carousel_secondaryText.innerText = nameOfTestimonials[1];
       break;
     case 2:
       carousel_mainText.innerText = mainTestimonies[2];
+      carousel_secondaryText.innerText = nameOfTestimonials[2];
   }
   console.log(carousel_id);
 }
