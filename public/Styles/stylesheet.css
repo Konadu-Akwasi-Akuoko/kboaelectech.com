@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.left-32 {
+  left: 8rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -557,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-ml-6 {
   margin-left: -1.5rem;
+}
+
+.-ml-40 {
+  margin-left: -10rem;
 }
 
 .block {
