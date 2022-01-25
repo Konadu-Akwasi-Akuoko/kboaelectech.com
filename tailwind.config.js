@@ -20,6 +20,7 @@ module.exports = {
         "tiltedBar-patterns": "url(/public/Images/Tilted-bar-patterns.svg)",
         "circle-patterns": "url(/public/Images/CirclePatterns.svg)",
         "wavy-patterns": "url(/public/Images/SolutionHeroPatterns.png)",
+        "doodles-patterns": "url(/public/Images/Doodles.png)"
       },
       borderRadius: {
         "20px": "20px",
