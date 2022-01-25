@@ -534,6 +534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -574,12 +578,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-screen {
   width: 100vw;
 }
 
 .w-2\/4 {
   width: 50%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
@@ -711,9 +723,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 8px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-alternateLightYellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(245 243 203 / var(--tw-border-opacity));
+}
+
+.border-primaryWine-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 39 55 / var(--tw-border-opacity));
 }
 
 .bg-primaryWine-100 {
@@ -795,12 +816,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pb-6 {
@@ -944,6 +969,10 @@ div {
   white-space: normal;
 }
 
+a {
+  text-transform: capitalize;
+}
+
 .serif-text {
   font-family: "Libre Baskerville", serif;
 }
@@ -1047,14 +1076,18 @@ div {
  positioned at right 75% of the width of the header */
 
 .not-showing-menu {
+  position: relative;
   right: -75%;
+  z-index: 40;
 }
 
 /* When the menu is showing the menu is positioned at 0px right
  of the width of the header */
 
 .showing-menu {
+  position: relative;
   right: 0px;
+  z-index: 40;
 }
 
 @media (min-width: 768px) {

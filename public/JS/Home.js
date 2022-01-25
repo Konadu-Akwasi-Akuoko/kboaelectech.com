@@ -91,6 +91,32 @@ function changeIconOnSmDevice() {
   }
 }
 
+//!Change the icon sizes to 24px on small devices. Only on contact page.
+function changeIconOnSmDeviceContactPage() {
+  if (windowWidth < 640) {
+    whatsappIcon.innerHTML = `<span
+    class="iconify"
+    data-icon="akar-icons:whatsapp-fill"
+    style="color: #6b2737; font-size: 38px"
+    ></span>`;
+    gmailIcon.innerHTML = `<span
+    class="iconify"
+    data-icon="mdi:gmail"
+    style="color: #6b2737; font-size: 38px"
+    ></span>`;
+    callIcon.innerHTML = `<span
+    class="iconify"
+    data-icon="fluent:call-32-regular"
+    style="color: #6b2737; font-size: 38px"
+    ></span>`;
+    instagramIcon.innerHTML = `<span
+    class="iconify"
+    data-icon="ant-design:instagram-outlined"
+    style="color: #6b2737; font-size: 38px"
+    ></span>`;
+  }
+}
+
 //Animation-sliding in of phone menu
 // When this function is called it displays the menu or hides the menu
 function menuPressed() {

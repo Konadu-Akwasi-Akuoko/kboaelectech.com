@@ -13,6 +13,10 @@ div {
   @apply whitespace-normal;
 }
 
+a {
+  @apply capitalize;
+}
+
 .serif-text {
   font-family: "Libre Baskerville", serif;
 }
@@ -60,11 +64,11 @@ div {
 /*  When the menu is not showing the menu is
  positioned at right 75% of the width of the header */
 .not-showing-menu {
-  @apply -right-3/4;
+  @apply -right-3/4 relative z-40;
 }
 
 /* When the menu is showing the menu is positioned at 0px right
  of the width of the header */
 .showing-menu {
-  @apply right-0;
+  @apply right-0 relative z-40;
 }
